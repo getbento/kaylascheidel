@@ -13,7 +13,7 @@
         <h2>{{ theme.options.main.header_image.alt_text }}</h2>
         <img src="{{ theme.options.main.header_image.url }}" />
 
-        {% insult = boxes.insults.all|random %}
+        {% set insult = boxes.insults.all|random %}
         {{ insult.name }}
 
     <em>theme by: {{ theme.config.theme.name }}</em>
