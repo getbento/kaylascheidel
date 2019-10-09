@@ -1,10 +1,14 @@
 <html>
+
+        {% set insult = boxes.insults.all|random %}
+
     <head>
+
         <title>{{ account.name }}</title>
 
         <style>
         body {
-            background-color: {{ theme.options.main.background_color }}
+            background-color: {{ insult.fields.background_color }}
         }
         </style>
     </head>
@@ -13,7 +17,6 @@
         <h2>{{ theme.options.main.header_image.alt_text }}</h2>
         <img src="{{ theme.options.main.header_image.url }}" />
 
-        {% set insult = boxes.insults.all|random %}
         {{ insult.name }}
 
     <em>theme by: {{ theme.config.theme.name }}</em>
