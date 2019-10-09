@@ -1,5 +1,7 @@
 {
     "name": "Insults", 
     "has_categories": true,
-    "fields": {}
+    "fields": {
+        "background_color": "color"
+    }
 }
