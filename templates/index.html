@@ -68,6 +68,15 @@
             background: transparent;
             border: none;
         }
+
+        .insult-container {
+        animation: scale 1s ease-all; 
+        }
+
+        @keyframes Scale {
+          0%   { transform: scale (10); }
+          100% { transform: scale (1); }
+        }
       </style>
     <script src="{{ static('/js/html2canvas.min.js') }}"></script>
   </head>
