@@ -5,6 +5,80 @@
     <title>{{ insult.name }}</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Barlow:900|Lexend+Deca&display=swap');
+      
+      html {
+          font-size: 16px;
+      }
+      body {
+          background-color: {{ insult.fields.background_color }};
+          font-size: 1rem;
+          font-family: Lexend Deca;
+          color: #ffffff;
+          padding: 3rem;
+      }
+      h1 {
+          font-family: Barlow;
+          font-size: 6rem;
+          font-weight: 900;
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          line-height: 1;
+          margin: auto;
+      }
+      h2 {
+          font-size: 4rem;
+      }
+      nav {
+          text-align: right;
+          position: fixed;
+          width: calc(100% - 6rem);
+          right: 3rem;
+          top: 3rem;
+      }
+      nav a {
+          font-family: lexend deca;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 2rem;
+          letter-spacing: 3px;
+          text-decoration: none;
+          margin-left: 3rem;
+      }
+      main {
+          display: flex;
+          height: 88vh;
+          align-items: center;
+      }
+      .controls {
+          width: calc(100% - 6rem);
+          position: fixed;
+          text-align: right;
+          bottom: 3rem;
+      }
+      .refresh {
+          display: inline-block;
+          width: 50%;
+      }
+      .refresh button {
+          font-family: Material Icons;
+          font-size: 5rem;
+          color: #fff;
+          background: transparent;
+          border: none;
+      }
+    
+      #insult-container {
+      animation: Scale .5s ease; 
+      }
+    
+      @keyframes Scale {
+        0%   { transform: scale(10); }
+        100% { transform: scale(1); }
+      }
+    </style>
     <script src="{{ static('/js/html2canvas.min.js') }}"></script>
   </head>
   <body>
@@ -87,78 +161,4 @@
       });
     </script>
   </body>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Barlow:900|Lexend+Deca&display=swap');
-    
-    html {
-        font-size: 16px;
-    }
-    body {
-        background-color: {{ insult.fields.background_color }};
-        font-size: 1rem;
-        font-family: Lexend Deca;
-        color: #ffffff;
-        padding: 3rem;
-    }
-    h1 {
-        font-family: Barlow;
-        font-size: 6rem;
-        font-weight: 900;
-        color: #ffffff;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        line-height: 1;
-        margin: auto;
-    }
-    h2 {
-        font-size: 4rem;
-    }
-    nav {
-        text-align: right;
-        position: fixed;
-        width: calc(100% - 6rem);
-        right: 3rem;
-        top: 3rem;
-    }
-    nav a {
-        font-family: lexend deca;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 2rem;
-        letter-spacing: 3px;
-        text-decoration: none;
-        margin-left: 3rem;
-    }
-    main {
-        display: flex;
-        height: 88vh;
-        align-items: center;
-    }
-    .controls {
-        width: calc(100% - 6rem);
-        position: fixed;
-        text-align: right;
-        bottom: 3rem;
-    }
-    .refresh {
-        display: inline-block;
-        width: 50%;
-    }
-    .refresh button {
-        font-family: Material Icons;
-        font-size: 5rem;
-        color: #fff;
-        background: transparent;
-        border: none;
-    }
-  
-    #insult-container {
-    animation: Scale .5s ease; 
-    }
-  
-    @keyframes Scale {
-      0%   { transform: scale(10); }
-      100% { transform: scale(1); }
-    }
-  </style>
 </html>
