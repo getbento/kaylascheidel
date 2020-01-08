@@ -3,5 +3,6 @@
     "has_categories": true,
     "fields": {
         "background_color": "color"
+        "description": "wysiwyg"
     }
 }
