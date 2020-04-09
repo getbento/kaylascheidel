@@ -10,6 +10,12 @@
           "background_color": "color",
           "header_image": "image"
       }
+      "misc": {
+        "title": "Misc",
+        "type": "section",
+        "items": {
+          "additional_css": "code"
+      }
       }
     }
   },
