@@ -9,12 +9,13 @@
         "items": {
           "background_color": "color",
           "header_image": "image"
-      }
+        }
+      } ,
       "misc": {
-        "title": "Misc",
+        "title": "Custom Styles",
         "type": "section",
         "items": {
-          "additional_css": "code"
+        "additional_css": "code"
       }
       }
     }
