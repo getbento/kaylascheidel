@@ -151,13 +151,8 @@
     </nav>
     {% block body %}
     <main>
-            {% extends 'index.html' %}
-
-            {% block body %}
             {{ current.fields.header.title }}
             {{ current.fields.header.description }}
-             
-            {% endblock %}
     </main>
     <div class="controls">
         <div class="twitter"><div class="twittertext">Tweet</div></a>
