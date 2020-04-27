@@ -2,7 +2,7 @@
   {% set insult = boxes.insults.all|random %}
 
   <head>
-    <title>{{ insult.name }}</title>
+    <title>general</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
@@ -150,13 +150,7 @@
     </div>
     </nav>
     {% block body %}
-    <main
-      id="insult-container"
-      class="insult-container"
-      style="background-color: inherit; max-width: 1000px; margin: auto; text-align: center;"
-    >
-      <div class="insult-title"><h1>{{ insult.name }}</h1></div>
-      <div class="insult-content"><p>{{ insult.fields.description }}</p></div>
+    <main>
     </main>
     <div class="controls">
         <div class="twitter"><div class="twittertext">Tweet</div></a>
