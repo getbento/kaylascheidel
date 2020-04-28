@@ -4,8 +4,11 @@
             "type": "section",
             "items": {
                 "title": "text",
-                "description": "wysiwyg",
+                "description": "wysiwyg"
             }
+        }
+        "flexiblecontent": {
+            "sections": "embed"
         }
     },
     "wireframe": ["section-header"]
