@@ -15,9 +15,8 @@
     "fields": {
         "layout": {
             "type": "section",
-            "items": "flexible_content" {
-                "title": "content",
-                "type": "embed",
+            "items": {
+                "flexible_content": "embed",
             }
         }
     },
