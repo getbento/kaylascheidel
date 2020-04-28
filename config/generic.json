@@ -15,7 +15,7 @@
     "fields": {
         "flexiblecontent": {
             "type": "section",
-            "items": {
+            "sections": {
                 "content_type": "embed"
             }
         }
