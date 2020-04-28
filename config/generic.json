@@ -14,10 +14,11 @@
 {
     "fields": {
         "flexiblecontent": {
-            "type": "section",
-            "items": {
-            "embed": "code"
+            "sections": {
+            "embed": {
+                "content_type": "embed"
             }
+        }
         }
     },
     "wireframe": ["flexible-content"]
