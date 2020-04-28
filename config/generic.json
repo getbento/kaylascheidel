@@ -13,12 +13,13 @@
 
 {
     "fields": {
-        "flexiblecontent": {
+        "layout": {
             "type": "section",
-            "sections": {
-                "content_type": "embed"
+            "items": "flexible_content" {
+                "title": "content",
+                "type": "embed",
             }
         }
     },
-    "wireframe": ["flexible-content"]
+    "wireframe": ["section-header"]
 }
