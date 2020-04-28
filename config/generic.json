@@ -16,7 +16,7 @@
         "flexiblecontent": {
             "type": "section",
             "items": {
-            "content_type": "embed"
+            "embed": "code"
             }
         }
     },
