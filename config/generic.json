@@ -16,9 +16,9 @@
         "flexiblecontent": {
             "type": "section",
             "items": {
-                "embed": "code",
+            "content_type": "embed"
             }
         }
     },
-    "wireframe": ["section-embed"]
+    "wireframe": ["flexible-content"]
 }
