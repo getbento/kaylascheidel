@@ -7,9 +7,18 @@
                 "description": "wysiwyg"
             }
         }
-        "flexiblecontent": {
-            "sections": "embed"
-        }
     },
     "wireframe": ["section-header"]
+}
+
+{
+    "fields": {
+        "flexiblecontent": {
+            "type": "section",
+            "section": {
+                "embed": "embed",
+            }
+        }
+    },
+    "wireframe": ["embed"]
 }
