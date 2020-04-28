@@ -5,7 +5,6 @@
             "items": {
                 "title": "text",
                 "description": "wysiwyg",
-                "embed": "embed"
             }
         }
     },
