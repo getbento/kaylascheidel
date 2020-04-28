@@ -14,9 +14,11 @@
 {
     "fields": {
         "flexiblecontent": {
-            "sections": "embed",
-            "embed": "code"
+            "type": "section",
+            "items": {
+                "embed": "code",
+            }
         }
     },
-    "wireframe": ["embed"]
+    "wireframe": ["section-embed"]
 }
