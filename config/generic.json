@@ -15,6 +15,7 @@
     "fields": {
         "flexiblecontent": {
             "sections": "embed",
+            "embed": "code"
         }
     },
     "wireframe": ["embed"]
