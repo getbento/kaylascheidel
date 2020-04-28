@@ -4,7 +4,8 @@
             "type": "section",
             "items": {
                 "title": "text",
-                "description": "wysiwyg"
+                "description": "wysiwyg",
+                "embed": "embed"
             }
         }
     },
