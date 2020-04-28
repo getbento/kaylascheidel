@@ -14,10 +14,7 @@
 {
     "fields": {
         "flexiblecontent": {
-            "type": "section",
-            "section": {
-                "embed": "embed",
-            }
+            "sections": "embed",
         }
     },
     "wireframe": ["embed"]
