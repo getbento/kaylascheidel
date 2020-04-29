@@ -8,9 +8,10 @@
             }
         },
         "flexible_content": {
-            "type": "section",
-            "items": {
-             "content_type": "embed"   
+            "sections": {
+             "one_column_text": {
+                "title": "text",
+                "description": "wysiwyg" 
             }
             }
         },
