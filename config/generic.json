@@ -12,9 +12,8 @@
 }
 
 {
-    "fields": {
-        "flexiblecontent": {
-            "sections": {
+    "fields": "flexiblecontent" {
+        "type": "section" {
             "content_type": "embed"
         }
     },
