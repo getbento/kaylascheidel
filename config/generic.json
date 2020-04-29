@@ -7,10 +7,13 @@
                 "description": "wysiwyg"
             }
         },
-        "flexible_content": {
+        "layout": {
             "type": "section",
              "items": {
-                "content_type": "one_column_text",
+                "flexible_content": {
+                    "title": "Content",
+                    "type": "section",                   
+                }
             }
             }
     },
