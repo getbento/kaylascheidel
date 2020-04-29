@@ -8,10 +8,10 @@
             }
         },
         "flexible_content": {
-            "type": "section",
-             "items": {
+            "sections": {
+            "one_column_text": {
                 "title": "text",
-                "description": "wysiwyg"            
+                "content": "wysiwyg"            
                 }
             }
     },
