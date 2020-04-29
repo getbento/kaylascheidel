@@ -9,9 +9,8 @@
         },
         "flexible_content": {
             "type": "section",
-             "one_column_text": {
-                "title": "text",
-                "description": "wysiwyg" 
+             "items": {
+                "content_type": "one_column_text",
             }
             }
     },
