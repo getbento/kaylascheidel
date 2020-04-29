@@ -6,15 +6,14 @@
                 "title": "text",
                 "description": "wysiwyg"
             }
-        }
-    },
+        },
+        "flexible_content": {
+            "title": "content",
+            "type": "section",
+            "items": {
+             "embed": "code"   
+            }
+            }
+        },
     "wireframe": ["section-header"]
-}
-{
-    "fields": "flexiblecontent" {
-        "type": "section" {
-            "content_type": "embed"
-        }
-    },
-    "wireframe": ["flexible-content"]
 }
