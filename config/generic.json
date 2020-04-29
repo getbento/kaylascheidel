@@ -10,7 +10,6 @@
         "flexible_content": {
             "type": "section",
             "items": {
-             "embed": "code",
              "content_type": "embed"   
             }
             }
