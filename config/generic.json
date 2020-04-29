@@ -8,7 +8,6 @@
             }
         },
         "layout": {
-            "title": "Layout",
             "type": "section" {
              "items": {
                 "flexible_content": {
