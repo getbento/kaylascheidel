@@ -8,7 +8,7 @@
             }
         },
         "flexible_content": {
-            "sections": {
+            "type": "section",
              "one_column_text": {
                 "title": "text",
                 "description": "wysiwyg" 
