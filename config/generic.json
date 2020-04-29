@@ -8,10 +8,10 @@
             }
         },
         "flexible_content": {
-            "title": "content",
             "type": "section",
             "items": {
-             "embed": "code"   
+             "embed": "code",
+             "content_type": "embed"   
             }
             }
         },
