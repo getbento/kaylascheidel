@@ -12,10 +12,10 @@
              "items": {
                 "flexible_content": {
                     "title": "Content",
-                    "type": "section",                   
+                    "type": "section"                  
                 }
             }
-            }
+}
     },
     "wireframe": ["section-header"]
 }
