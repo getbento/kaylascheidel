@@ -7,13 +7,5 @@
                 "description": "wysiwyg"
             }
         },
-        "flexible_content": {
-            "type": "section",
-            "one_column_text": {
-                "title": "text",
-                "description": "wysiwyg"           
-                }
-            }
-    },
     "wireframe": ["section-header"]
 }
