@@ -7,16 +7,12 @@
                 "description": "wysiwyg"
             }
         }
+"flexiblecontent": {
+    "flexiblecontent": "section",
+    "items": {
+        "title": "embed",
+        "description": "embed"
+    }
     },
     "wireframe": ["section-header"]
-}
-
-{
-    "fields": {
-    "flexiblecontent": {
-        "type": "section",
-            "content_type": "embed"
-        }
-    },
-    "wireframe": ["flexible-content"]
 }
