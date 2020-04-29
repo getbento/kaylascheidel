@@ -7,12 +7,11 @@
                 "description": "wysiwyg"
             }
         },
-        "layout": {
+        "flexible_content": {
             "type": "section",
              "items": {
-                "flexible_content": {
-                    "title": "Content",
-                    "type": "section"                  
+                "title": "text",
+                "description": "wysiwyg"            
                 }
             }
     },
