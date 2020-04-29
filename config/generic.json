@@ -13,11 +13,9 @@
 
 {
     "fields": {
-        "layout": {
-            "type": "section",
-            "items": {
-                "flexible_content": "embed",
-            }
+        "flexiblecontent": {
+            "sections": {
+            "content_type": "embed"
         }
     },
     "wireframe": ["flexible-content"]
