@@ -8,7 +8,8 @@
             }
         },
         "layout": {
-            "type": "section",
+            "title": "Layout",
+            "type": "section" {
              "items": {
                 "flexible_content": {
                     "title": "Content",
