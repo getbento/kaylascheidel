@@ -8,14 +8,13 @@
             }
         },
         "layout": {
-            "type": "section" {
+            "type": "section",
              "items": {
                 "flexible_content": {
                     "title": "Content",
                     "type": "section"                  
                 }
             }
-}
     },
     "wireframe": ["section-header"]
 }
