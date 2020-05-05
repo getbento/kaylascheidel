@@ -6,7 +6,18 @@
                 "title": "text",
                 "description": "wysiwyg"
             }
-        }
+        },
+        "flexible_content": {
+            "type": "section",
+            "items": {
+                "content": {
+                    "type": "repeater",
+                    "items": {
+                        "embed": "code",
+                    }
+                }
+            }
+        },   
     },
-    "wireframe": ["section-header"]
+    "wireframe": ["section-header", "section-flexible_content"]
 }
