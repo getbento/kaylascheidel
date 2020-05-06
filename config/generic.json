@@ -26,6 +26,7 @@
                     "title": "text",
                     "content": "wysiwyg"
                 }
+            }
             },
     },
     "wireframe": ["section-header", "section-flexible_content"]
