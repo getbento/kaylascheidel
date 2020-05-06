@@ -11,7 +11,7 @@
             "type": "section",
             "items": {
                 "title": "text",
-                "description": "wysiwyg"
+                "content": "wysiwyg"
             }
         },
         "flexible_content": {
