@@ -26,5 +26,5 @@
             }
         }, 
     },
-    "wireframe": ["section-header", "section-flexible_content"]
+    "wireframe": ["section-header", "section-one_column_text", "section-flexible_content"]
 }
