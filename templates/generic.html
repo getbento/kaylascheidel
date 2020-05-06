@@ -1,8 +1,219 @@
-{% extends 'index.html' %}
+<html>
+  {% set insult = boxes.insults.all|random %}
 
+  <head>
+    <title>general</title>
 
-{% block body %}
-{{ current.fields.header.title }}
-{{ current.fields.header.description }}
- 
-{% endblock %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Barlow:900|Lexend+Deca&display=swap');
+      
+      html {
+          font-size: 16px;
+      }
+      body {
+          background-color: {{ insult.fields.background_color }};
+          font-size: 1rem;
+          font-family: Lexend Deca;
+          color: #ffffff;
+          padding: 3rem;
+      }
+      h1 {
+          font-family: Barlow;
+          font-size: 6rem;
+          font-weight: 900;
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          line-height: 1;
+          margin: auto;
+      }
+      h2 {
+          font-size: 4rem;
+      }
+      nav .container {
+          text-align: justify;
+          position: fixed;
+          width: calc(100% - 6rem);
+          right: 3rem;
+          top: 3rem;
+      }
+
+    .site-logo img {
+    width: 100%;
+    }
+      .site-logo {
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+    }
+
+      .site-nav {
+      float: right;
+      text-align: right;
+      width: 50%;
+      vertical-align: top;
+      display: inline-block;
+    }
+
+    .btn {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1rem auto;
+    font-size: 0.8rem;
+    transition: 0.3s ease all;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+      .site-nav a {
+          font-family: lexend deca;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          letter-spacing: 7px;
+          text-decoration: none;
+          margin-left: 3rem;
+      }
+      main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 88vh;
+          align-items: center;
+      }
+
+      .controls {
+          width: calc(100% - 6rem);
+          position: fixed;
+          text-align: right;
+          bottom: 3rem;
+      }
+      .refresh {
+          display: inline-block;
+          width: 50%;
+      }
+      .refresh button {
+          font-family: Material Icons;
+          font-size: 5rem;
+          color: #fff;
+          background: transparent;
+          border: none;
+              cursor: pointer;
+    transition: 0.3s ease-in all;
+      }
+      
+.refresh button:hover {
+    transform: rotate(720deg);
+}
+.refresh button:focus {
+    transform: rotate(360deg);
+
+    
+      #insult-container {
+        background-color: transparent !important;
+        animation: Scale .5s ease; 
+      }
+
+#rgburn-about {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+    
+      @keyframes Scale {
+        0%   { transform: scale(10); }
+        100% { transform: scale(1); }
+      }
+    </style>
+      <style>{{ theme.options.misc.additional_css }}</style>
+    <script src="{{ static('/js/html2canvas.min.js') }}"></script>
+  </head>
+  <body class="general">
+    <nav>
+      <div class="container">
+      <div class="site-logo">
+      <a href="/"><img src="https://images.getbento.com/accounts/4627507496ff45d065a6f59e7613a625/media/images/28967RGBurn_Logo.gif"></a>
+      </div>
+      <div class="site-nav">
+      {% for item in navs.main %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+    </nav>
+    {% block body %}
+    <main>
+        <h1>{{ current.fields.header.title }}</h1>
+        <p>{{ current.fields.header.description }}</p>
+    </main>
+    <div class="controls">
+        <div class="twitter"><div class="twittertext">Tweet</div></a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      <div class="refresh">
+        <button type="submit" onclick="refreshPage()">refresh</button>
+      </div>
+    </div>
+    {% endblock %}
+    <div
+      id="modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99999998;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.5);"
+     >
+      <button id="close-button" style="position: absolute; top: 0; right: 0;">
+        close
+      </button>
+    </div>
+    <script>
+      function refreshPage() {
+        window.location.reload();
+      }
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function(event) {
+        // Capture on button click and add to DOM
+        const captureButton = document.querySelector('#captureButton');
+        captureButton.addEventListener(
+          'click',
+          function(e) {
+            const modal = document.querySelector('#modal');
+            console.log(modal);
+            modal.style.display = 'flex';
+            const captureTarget = document.querySelector('#insult-container');
+            html2canvas(captureTarget).then(canvas => {
+              modal.appendChild(canvas);
+            });
+          },
+          false
+        );
+
+        // close modal and empty on button click
+        const closeButton = document.querySelector('#close-button');
+        closeButton.addEventListener('click', function(event) {
+          const modal = document.querySelector('#modal');
+          const image = document.querySelector('#modal canvas');
+          image.remove();
+          modal.style.display = 'none';
+        });
+      });
+    </script>
+      <div class="twitter"><div class="icon"></div></div>
+  </body>
+</html>
