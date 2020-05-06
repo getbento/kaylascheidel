@@ -14,7 +14,6 @@
                     "type": "repeater",
                     "items": {
                         "embed": "code",
-                        "one_column_text": "content"
                     }
                 }
             }
