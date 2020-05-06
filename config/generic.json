@@ -17,7 +17,16 @@
                     }
                 }
             }
-        },   
+        }, 
+        
+        "fields": {
+            "one_column_text": {
+                "type": "section",
+                "items": {
+                    "title": "text",
+                    "content": "wysiwyg"
+                }
+            },
     },
     "wireframe": ["section-header", "section-flexible_content"]
 }
