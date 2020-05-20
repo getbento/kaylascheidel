@@ -6,25 +6,7 @@
                 "title": "text",
                 "description": "wysiwyg"
             }
-        },
-        "one_column_text": {
-            "type": "section",
-            "items": {
-                "title": "text",
-                "content": "wysiwyg"
-            }
-        },
-        "flexible_content": {
-            "type": "section",
-            "items": {
-                "content": {
-                    "type": "repeater",
-                    "items": {
-                        "embed": "code",
-                    }
-                }
-            }
-        }, 
+        }
     },
-    "wireframe": ["section-header", "section-one_column_text", "section-flexible_content"]
+    "wireframe": ["section-header"]
 }
