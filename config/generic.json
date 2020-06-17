@@ -20,11 +20,11 @@
                 "content": {
                     "type": "repeater",
                     "items": {
-                        "embed": "code",
+                        "embed": "code"
                     }
                 }
             }
-        }, 
+        } 
     },
     "wireframe": ["section-header", "section-one_column_text", "section-flexible_content"]
 }
