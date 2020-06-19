@@ -189,8 +189,27 @@
       </button>
     </div>
     <script>
+      var insults = {{ boxes.insults.all|tojson }};
+//      console.log(insults);
       function refreshPage() {
-        window.location.reload();
+        var insult = insults[Math.floor(Math.random() * insults.length)];
+        
+        // Get the insult name and put it in a variable
+        var name = insult.name;
+        console.log(name);
+
+        // Get the insult hex color and put it in a variable
+
+        // Get the CSS that you need in order to assign the bckground color and put it in a variable
+
+        // Get the background html element (document.querySelector)
+
+        // Get the text html element (document.querySelector)
+
+        // Set the background element to have the css that you just created
+
+        // Set the text html element .innerHtml to the insult name
+        
       }
     </script>
     <script type="text/javascript">
