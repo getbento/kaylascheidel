@@ -113,9 +113,9 @@
     transform: rotate(360deg);
 }
 
- .insult-title h1 {
-  animation: Scale .5s ease; 
- }   
+@keyframes animationName {
+from {margin-left:-30%;}
+} 
       #insult-container {
         background-color: transparent !important;
       }
@@ -187,6 +187,9 @@
       </button>
     </div>
     <script>
+      function startAnimation() {
+    document.getElementById(".insult-tilte h1").style.animation = "animationName 2s linear 1";
+}
       var insults = {{ boxes.insults.all|tojson }};
 //      console.log(insults);
       function refreshPage() {
