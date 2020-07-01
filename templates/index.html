@@ -187,12 +187,10 @@ from {margin-left:-30%;}
       </button>
     </div>
     <script>
-      function startAnimation() {
-    document.getElementById(".insult-tilte h1").style.animation = "animationName 2s linear 1";
-}
       var insults = {{ boxes.insults.all|tojson }};
 //      console.log(insults);
       function refreshPage() {
+        document.getElementById("insult.name").style.animation = "animationName 2s linear 1";
         var insult = insults[Math.floor(Math.random() * insults.length)];
         
         // Get the insult name and put it in a variable
