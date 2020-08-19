@@ -215,6 +215,32 @@
       }
     </script>
     <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+        // Capture on button click and add to DOM
+        const captureButton = document.querySelector('#captureButton');
+        captureButton.addEventListener(
+          'click',
+          function(e) {
+            const modal = document.querySelector('#modal');
+            console.log(modal);
+            modal.style.display = 'flex';
+            const captureTarget = document.querySelector('#insult-container');
+            html2canvas(captureTarget).then(canvas => {
+              modal.appendChild(canvas);
+            });
+          },
+          false
+        );
+        // close modal and empty on button click
+        const closeButton = document.querySelector('#close-button');
+        closeButton.addEventListener('click', function(event) {
+          const modal = document.querySelector('#modal');
+          const image = document.querySelector('#modal canvas');
+          image.remove();
+          modal.style.display = 'none';
+        });
+      });
+
     </script>
       <div class="twitter"><div class="icon"></div></div>
   </body>
